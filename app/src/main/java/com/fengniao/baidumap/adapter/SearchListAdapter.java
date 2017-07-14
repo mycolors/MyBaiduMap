@@ -2,7 +2,6 @@ package com.fengniao.baidumap.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +12,6 @@ import com.fengniao.baidumap.R;
 
 import java.util.List;
 
-import butterknife.OnClick;
-
-/**
- * Created by a1 on 2016/12/29.
- */
 
 public class SearchListAdapter extends RecyclerView.Adapter<SearchListAdapter.MyViewHoler> implements View.OnClickListener {
     private Context context;

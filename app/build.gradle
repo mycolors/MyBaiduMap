@@ -13,7 +13,7 @@ android {
     buildTypes {
         release {
             ndk {
-                abiFilters "armeabi"
+                abiFilters "armeabi" // includes ARM SO files only, so no x86 SO file
             }
 
             minifyEnabled false
@@ -22,7 +22,7 @@ android {
 
         debug {
             ndk {
-                abiFilters "armeabi"
+                abiFilters "armeabi" // includes ARM SO files only, so no x86 SO file
             }
         }
     }

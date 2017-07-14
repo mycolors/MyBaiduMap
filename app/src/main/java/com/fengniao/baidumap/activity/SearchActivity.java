@@ -1,15 +1,12 @@
 package com.fengniao.baidumap.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -28,9 +25,6 @@ import com.baidu.mapapi.search.poi.PoiSearch;
 import com.fengniao.baidumap.MainActivity;
 import com.fengniao.baidumap.R;
 import com.fengniao.baidumap.adapter.SearchListAdapter;
-import com.fengniao.baidumap.app.AppContext;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,14 +52,14 @@ public class SearchActivity extends BaseActivity {
         initView();
     }
     public void initView() {
-        city = getIntent().getStringExtra("city");
-        if (TextUtils.isEmpty(city)) {
-            if (!TextUtils.isEmpty(AppContext.city)) {
-                city = AppContext.city;
-            } else {
-                return;
-            }
-        }
+//        city = getIntent().getStringExtra("city");
+//        if (TextUtils.isEmpty(city)) {
+//            if (!TextUtils.isEmpty(AppContext.city)) {
+//                city = AppContext.city;
+//            } else {
+//                return;
+//            }
+//        }
         poiSearch = PoiSearch.newInstance();
         search = GeoCoder.newInstance();
         mList = new ArrayList<>();
